@@ -7,18 +7,15 @@
             {{title}}
         </div>
     </div>
+
     <div class="sidebar-section">
         <app-label title="Main"></app-label>
         <app-item icon="🏠" title="Dashboard" link="dashboards"></app-item>
-        <app-item icon="📁" title="My Documents" link="documents"></app-item>
         <app-item icon="💬" title=" AI Chat" badge="AI" link="chat"></app-item>
-        <app-item icon="✍️" title="Create" link="create"></app-item>
-        <app-item icon="📋" title="Templates" link="templates"></app-item>
+        <app-item icon="📁" title="History" link="documents"></app-item>
 
-        <app-label title="Pro Features"></app-label>
-        <app-item icon="⚖️" title="Contracts" link="contracts"></app-item>
-        <app-item icon="🌍" title="Translate" link="translate"></app-item>
-        <app-item icon="🔗" title="API" link="api"></app-item>
+        <app-label title="Business"></app-label>
+        <app-item icon="🔗" title="API" link="api" [isPro]="true"></app-item>
 
         <app-label title="Account"></app-label>
         <app-item icon="⚙️" title="Settings" link="settings"></app-item>
