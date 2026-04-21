@@ -1,51 +1,30 @@
 <section>
     <div class="sidebar-header">
         <div class="sidebar-logo">
-            <div class="logo-icon" style="width:28px;height:28px;font-size:13px">{{icon}}</div>
+            <div class="logo-icon" style="width:28px;height:28px;font-size:13px">
+                {{icon}}
+            </div>
             {{title}}
         </div>
     </div>
     <div class="sidebar-section">
-        <div class="sidebar-section-label">Main</div>
-        <div class="sidebar-item active">
-            <span class="sidebar-item-icon">🏠</span> Dashboard
-        </div>
-        <div class="sidebar-item">
-            <span class="sidebar-item-icon">📁</span> My Documents
-        </div>
-        <div class="sidebar-item">
-            <span class="sidebar-item-icon">💬</span> AI Chat
-            <span class="sidebar-item-badge">AI</span>
-        </div>
-        <div class="sidebar-item">
-            <span class="sidebar-item-icon">✍️</span> Create
-        </div>
-        <div class="sidebar-item">
-            <span class="sidebar-item-icon">📋</span> Templates
-        </div>
+        <app-label title="Main"></app-label>
+        <app-item icon="🏠" title="Dashboard" link="dashboards"></app-item>
+        <app-item icon="📁" title="My Documents" link="documents"></app-item>
+        <app-item icon="💬" title=" AI Chat" badge="AI" link="chat"></app-item>
+        <app-item icon="✍️" title="Create" link="create"></app-item>
+        <app-item icon="📋" title="Templates" link="templates"></app-item>
 
-        <div class="sidebar-section-label" style="margin-top:20px">Pro Features</div>
-        <div class="sidebar-item">
-            <span class="sidebar-item-icon">⚖️</span> Contracts
-            <span class="tag tag-pro" style="margin-left:auto;padding:2px 6px;font-size:9px">PRO</span>
-        </div>
-        <div class="sidebar-item">
-            <span class="sidebar-item-icon">🌍</span> Translate
-            <span class="tag tag-pro" style="margin-left:auto;padding:2px 6px;font-size:9px">PRO</span>
-        </div>
-        <div class="sidebar-item">
-            <span class="sidebar-item-icon">🔗</span> API
-            <span class="tag tag-pro" style="margin-left:auto;padding:2px 6px;font-size:9px">PRO</span>
-        </div>
+        <app-label title="Pro Features"></app-label>
+        <app-item icon="⚖️" title="Contracts" link="contracts"></app-item>
+        <app-item icon="🌍" title="Translate" link="translate"></app-item>
+        <app-item icon="🔗" title="API" link="api"></app-item>
 
-        <div class="sidebar-section-label" style="margin-top:20px">Account</div>
-        <div class="sidebar-item">
-            <span class="sidebar-item-icon">⚙️</span> Settings
-        </div>
-        <div class="sidebar-item">
-            <span class="sidebar-item-icon">💳</span> Billing
-        </div>
+        <app-label title="Account"></app-label>
+        <app-item icon="⚙️" title="Settings" link="settings"></app-item>
+        <app-item icon="💳" title="Billing" link="billing"></app-item>
     </div>
+
     <div class="sidebar-bottom">
         <div class="user-pill">
             <div class="avatar" id="sidebar-avatar">AJ</div>
