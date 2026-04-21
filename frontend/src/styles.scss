@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg: #0a0a0f;
+    --bg2: #111118;
+    --bg3: #1a1a24;
+    --bg4: #22222f;
+    --border: rgba(255, 255, 255, 0.08);
+    --border2: rgba(255, 255, 255, 0.14);
+    --text: #f0eeff;
+    --text2: #9a96b4;
+    --text3: #5a5870;
+    --accent: #7c5cfc;
+    --accent2: #a78bfa;
+    --accent3: #c4b5fd;
+    --gold: #f5c842;
+    --gold2: #fde68a;
+    --green: #34d399;
+    --red: #f87171;
+    --radius: 14px;
+    --radius-sm: 8px;
+    --shadow: 0 4px 32px rgba(0, 0, 0, 0.5);
+    --shadow-sm: 0 2px 12px rgba(0, 0, 0, 0.3);
+    --glow: 0 0 40px rgba(124, 92, 252, 0.18);
+    --transition: 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[data-theme="light"] {
+    --bg: #f5f4ff;
+    --bg2: #ededfc;
+    --bg3: #e3e1f8;
+    --bg4: #d6d3f0;
+    --border: rgba(0, 0, 0, 0.08);
+    --border2: rgba(0, 0, 0, 0.14);
+    --text: #1a1830;
+    --text2: #5a5580;
+    --text3: #9a96b4;
+    --accent: #6d4ef0;
+    --accent2: #7c5cfc;
+    --accent3: #a78bfa;
+    --shadow: 0 4px 32px rgba(100, 80, 200, 0.12);
+    --shadow-sm: 0 2px 12px rgba(100, 80, 200, 0.08);
+    --glow: 0 0 40px rgba(124, 92, 252, 0.1);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Syne", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+    transition:
+        background var(--transition),
+        color var(--transition);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-family: inherit;
+    background: none;
+}
+
+input,
+textarea,
+select {
+    font-family: inherit;
+}
